@@ -1,0 +1,110 @@
+iata_code,airport_name,iata_city_code,city,country,country_code
+ADD,Bole Airport,ADD,Addis Ababa,Ethiopia,ET
+AER,Sochi Airport,AER,Sochi,Russia,RU
+AGP,Malaga Airport,AGP,Malaga,Spain,ES
+ALA,Almaty Airport,ALA,Almaty,Kazakhstan,KZ
+ALG,Houari Boumediene Airport,ALG,Algiers,Algeria,DZ
+AMD,Vallabhbhai Patel Airport,AMD,Ahmedabad,India,IN
+AMM,Queen Alia Airport,AMM,Amman,Jordan,JO
+AMS,Schiphol Airport,AMS,Amsterdam,Netherlands,NL
+ATH,Eleftherios Venizelos Airport,ATH,Athens,Greece,GR
+ATL,Hartsfield Jackson Airport,ATL,Atlanta,United States of America,US
+AUH,Zayed International Airport,AUH,Abu Dhabi,United Arab Emirates,AE
+AYT,Antalya Airport,AYT,Antalya,Turkey,TR
+BAH,Bahrain Airport,BAH,Bahrain,Bahrain,BH
+BCN,El Prat Airport,BCN,Barcelona,Spain,ES
+BEY,Rafic Hariri Airport,BEY,Beirut,Lebanon,LB
+BKK,Suvarnabhumi Airport,BKK,Bangkok,Thailand,TH
+BLR,Kempegowda Airport,BLR,Bangalore,India,IN
+BOM,Bombay Chhatrapati Shivaji Airport,BOM,Mumbai,India,IN
+BOS,Logan Airport,BOS,Boston,United States of America,US
+BRU,Brussels Airport,BRU,Brussels,Belgium,BE
+CAI,Cairo Airport,CAI,Cairo,Egypt,EG
+CCJ,Calicut Airport,CCJ,Kozhikode,India,IN
+CCU,Netaji Subhas Chandra Bose Airport,CCU,Kolkata,India,IN
+CDG,Charles De Gaulle Airport,PAR,Paris,France,FR
+CGK,Soekarno Hatta Airport,JKT,Jakarta,Indonesia,ID
+CLT,Charlotte Douglas International Airport,WAW,"Charlotte, North Carolina",United States of America,US
+CMB,Bandaranaike Airport,CMB,Colombo,Sri Lanka,LK
+CMN,Mohamed V Airport,CAS,Casablanca,Morocco,MA
+CNX,Chiang Mai Airport,CNX,Chiang Mai,Thailand,TH
+COK,Cochin Airport,COK,Kochi,India,IN
+CPH,Kastrup Airport,CPH,Copenhagen,Denmark,DK
+DAM,Damascus Airport,DAM,Damascus,Syria,SY
+DBB,Al Alamein Airport,DBB,Al Alamein,Egypt,EG
+DEL,Indira Gandhi Airport,DEL,New Delhi,India,IN
+DMM,King Fahd Airport,DMM,Dammam,Saudi Arabia,SA
+DOH,Hamad Airport,DOH,Doha,Qatar,QA
+DPS,Ngurah Rai Airport,DPS,Bali,Indonesia,ID
+DUB,Dublin Airport,DUB,Dublin,Ireland,IE
+DUS,Dusseldorf Airport,DUS,Dusseldorf,Germany,DE
+ELQ,Prince Naif Bin Abdulaziz Airport,ELQ,Al Qassim,Saudi Arabia,SA
+EVN,Zvartnots Airport,EVN,Yerevan,Armenia,AM
+FCO,Fiumicino Leonardi Da Vinci Airport,ROM,Rome,Italy,IT
+FRA,Frankfurt Airport,FRA,Frankfurt,Germany,DE
+GVA,Geneva Airport,GVA,Geneva,Switzerland,CH
+GYD,Heydar Aliyev Airport,GYD,Baku,Azerbaijan,AZ
+HAN,Noi Bai Airport,HAN,Hanoi,Vietnam,VN
+HKG,Hong Kong Airport,HKG,Hong Kong,China (Hong Kong),HK
+HKT,Phuket Airport,HKT,Phuket,Thailand,TH
+HYD,Rajiv Gandhi Airport,HYD,Hyderabad,India,IN
+IAD,Dulles Airport,WAS,Washington,United States of America,US
+ICN,Incheon Airport,SEL,Seoul,South Korea,KR
+ISB,Benazir Bhutto Airport,ISB,Islamabad,Pakistan,PK
+IST,Ataturk Airport,IST,Istanbul,Turkey,TR
+JAI,Jaipur Airport,JAI,Jaipur,India,IN
+JED,King Abdulaziz Airport,JED,Jeddah,Saudi Arabia,SA
+JFK,John F Kennedy Airport,NYC,New York,United States of America,US
+JMK,Mykonos Airport,JMK,Mykonos,Greece,GR
+JNB,O R Tambo Airport,JNB,Johannesburg,South Africa,ZA
+JTR,Santorini Airport,JTR,Santorini,Greece,GR
+KBV,Krabi Airport,KBV,Krabi,Thailand,TH
+KHI,Jinnah Airport,KHI,Karachi,Pakistan,PK
+KIX,Kansai Airport,OSA,Osaka,Japan,JP
+KNO,Kualanamu Airport,MES,Medan,Indonesia,ID
+KRK,John Paul II Balice Airport,KRK,Krakow,Poland,PL
+KTI,Phnom Penh Techo Airport,KTI,Phnom Penh Krong Ta Khmau,Cambodia,KH
+KUL,Kuala Lumpur Airport,KUL,Kuala Lumpur,Malaysia,MY
+KWI,Kuwait Airport,KWI,Kuwait,Kuwait,KW
+KZN,Kazan Airport,KZN,Kazan,Russia,RU
+LED,Pulkovo Airport,LED,Saint Petersburg,Russia,RU
+LHE,Allama Iqbal Airport,LHE,Lahore,Pakistan,PK
+LHR,Heathrow Airport,LON,London,United Kingdom,GB
+LIS,Humberto Delgado Airport,LIS,Lisbon,Portugal,PT
+MAA,Chennai Airport,MAA,Chennai,India,IN
+MAD,Barajas Airport,MAD,Madrid,Spain,ES
+MAN,Manchester Airport,MAN,Manchester,United Kingdom,GB
+MCT,Muscat Airport,MCT,Muscat,Oman,OM
+MED,Mohammad Bin Abdulaziz Airport,MED,Medina,Saudi Arabia,SA
+MEL,Tullamarine Airport,MEL,Melbourne,Australia,AU
+MLE,Velana Airport,MLE,Male,Maldives,MV
+MNL,Ninoy Aquino Airport,MNL,Manila,Philippines,PH
+MUC,Franz Josef Strauss Airport,MUC,Munich,Germany,DE
+MXP,Malpensa Airport,MIL,Milan,Italy,IT
+NBO,Jomo Kenyatta Airport,NBO,Nairobi,Kenya,KE
+NCE,Cote D Azur Airport,NCE,Nice,France,FR
+NRT,Narita Airport,TYO,Tokyo,Japan,JP
+ORD,O'Hare Airport,CHI,Chicago,United States of America,US
+OTP,Henri Coanda Airport,OTP,Bucharest,Romania,RO
+PEW,Bacha Khan Airport,PEW,Peshawar,Pakistan,PK
+PKX,Daxing Airport,BJS,Beijing,China,CN
+PMI,Palma De Mallorca Airport,PMI,Palma De Mallorca,Spain,ES
+PRG,Vaclav Havel Airport,PRG,Prague,Czech Republic,CZ
+PVG,Pudong Airport,SHA,Shanghai,China,CN
+RUH,King Khalid Airport,RUH,Riyadh,Saudi Arabia,SA
+SEZ,Mahe Airport,SEZ,Seychelles,Seychelles,SC
+SIN,Changi Airport,SIN,Singapore,Singapore,SG
+SLL,Salalah Airport,SLL,Salalah,Oman,OM
+SVO,Sheremetyevo Airport,MOW,Moscow,Russia,RU
+SYD,Kingsford Smith Airport,SYD,Sydney,Australia,AU
+TAS,Tashkent Airport,TAS,Tashkent,Uzbekistan,UZ
+TBS,Tbilisi Airport,TBS,Tbilisi,Georgia,GE
+TLV,Ben Gurion Airport,TLV,Tel Aviv,Israel,IL
+TPE,Taiwan Taoyuan Airport,TPE,Taipei,China (Taiwan),TW
+TRV,Trivandrum Airport,TRV,Thiruvananthapuram,India,IN
+TUN,Carthage Airport,TUN,Tunis,Tunisia,TN
+VIE,Schwechat Airport,VIE,Vienna,Austria,AT
+WAW,Frederic Chopin Airport,WAW,Warsaw,Poland,PL
+YYZ,Pearson Airport,YTO,Toronto,Canada,CA
+ZNZ,Abeid Amani Karume Airport,ZNZ,Zanzibar,Tanzania,TZ
+ZRH,Zurich Airport,ZUR,Zurich,Switzerland,CH
