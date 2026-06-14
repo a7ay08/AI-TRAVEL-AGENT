@@ -1,6 +1,20 @@
-fastapi[all]
-uvicorn[standard]
-python-json-logger
-pydantic
-httpx
-cachetools
+# Web & Routing
+fastapi[all]>=0.100.0
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+
+# HTTP client & APIs
+httpx>=0.24.0
+openai>=1.0.0
+
+# Settings & Validation
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# Utilities
+python-json-logger>=2.0.0
+cachetools>=5.3.0
+
+# Database & Ingestion (if running helper data scripts)
+pinecone-client>=3.0.0
