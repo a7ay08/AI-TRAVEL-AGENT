@@ -107,4 +107,4 @@ The response includes flight status, price, weather, and relevant POIs.
 
 ## License
 
-This project is licensed under the MIT License.
+NA
