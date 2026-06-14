@@ -1,3 +1,4 @@
+#standalone utility script designed to verify that the LLM connection is functioning properly. It tests the LLMHandler's ability to classify chat intents and extract dates without having to run the entire FastAPI server.
 import asyncio
 import httpx
 from openai import AsyncOpenAI
