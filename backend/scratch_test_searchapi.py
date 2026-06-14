@@ -1,3 +1,4 @@
+#t is a testing script used to isolate and validate integrations with the external SearchAPI endpoint. It verifies if API keys are correctly configured and fetches a raw sample of live flight data from the provider.
 import asyncio
 import os
 from dotenv import load_dotenv
