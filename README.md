@@ -1,118 +1,110 @@
-🌍 AI TRAVEL AGENT
-An elite, luxury AI travel assistant. This prototype leverages a Local-First LLM strategy and Vector RAG (Retrieval-Augmented Generation) to provide highly personalized destination discovery, real-time flight data, and immersive media previews.
+# AI Travel Agent
 
-📋 Table of Contents
-Project Architecture
+## Overview
 
-Core Features
+**AI Travel Agent** is a FastAPI‑based backend with a minimal React/Next.js frontend that lets users ask a conversational AI for travel‑related information. The system integrates:
 
-Technology Stack
+- **LLM Handler** – talks to a local or remote Large Language Model (LLM) to classify intent, generate responses and extract travel dates.
+- **Search API** – queries live flight data via the SearchAPI provider.
+- **Weather Handler** – fetches current weather for a destination.
+- **Static data** – POIs, hotels, routes and media are loaded from CSV/JSON files at startup.
 
-Getting Started
+The backend stitches these services together and serves JSON endpoints consumed by the UI cards (flight info, weather, points of interest, etc.). The code has been cleaned up, redundant sections removed, and helpful high‑level comments added.
 
-Project Structure
+---
 
-🏗 Project Architecture
-The system operates on a Decoupled RAG Architecture:
+## Architecture
 
-Frontend: A Next.js 14 (App Router) interface styled with Tailwind CSS for a "Premium Dark Mode" aesthetic.
+```
+AI‑TRAVEL‑AGENT/
+├─ backend/                 # FastAPI server
+│   ├─ main.py             # Entry point, loads data, defines routes
+│   ├─ config.py           # Pydantic settings (environment variables)
+│   └─ utils/
+│       ├─ llm_handler.py  # LLM interaction & intent classification
+│       └─ weather_handler.py
+├─ frontend/                # Next.js UI (src/app/...)
+│   └─ ...                
+├─ data/                    # CSV/JSON static assets
+└─ README.md                # This document
+```
 
-Backend: A FastAPI (Python) server handling orchestration, intent extraction, and data retrieval.
+- **`main.py`** – sets up the FastAPI app, loads CSV/JSON data into in‑memory look‑ups, and exposes endpoints for flight info, weather, and POI retrieval.
+- **`config.py`** – uses Pydantic's `BaseSettings` to read environment variables (e.g., API keys, data directory).
+- **`llm_handler.py`** – wraps LLM calls, implements retry logic, and parses intents.
+- **`weather_handler.py`** – simple async wrapper around a weather API.
+- **Frontend** – consumes the JSON endpoints and displays cards with dynamic UI effects.
 
-Brain: Llama-3.1-8B-Instruct running locally via LM Studio to ensure privacy and low latency.
+---
 
-Memory: Pinecone Vector DB storing ~9,000 flight routes, Points of Interest (POIs), and immersive media links.
+## Setup & Installation
 
-✨ Features
-1. In-Chat Personalization Widget
-Unlike static forms, the bot intercepts your initial query and presents a sleek, interactive widget directly in the chat stream to capture:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/a7ay08/AI-TRAVEL-AGENT.git
+   cd AI-TRAVEL-AGENT
+   ```
+2. **Create a virtual environment** (Python 3.11+ recommended)
+   ```bash
+   python -m venv .venv
+   .\.venv\Scripts\activate   # Windows PowerShell
+   ```
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Configure environment variables**
+   - Copy `.env.example` to `.env` (if provided) or create a new `.env` file.
+   - Set the following keys:
+     ```
+     SEARCHAPI_KEY=your_searchapi_key
+     LLM_API_KEY=your_llm_key
+     LLM_BASE_URL=https://your-llm-endpoint
+     ...
+     ```
+5. **Run the backend**
+   ```bash
+   python -m uvicorn main:app --reload
+   ```
+   The API will be reachable at `http://127.0.0.1:8000`.
+6. **Run the frontend** (optional, requires Node.js)
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+   The UI will be available at `http://localhost:3000`.
 
-Origin: Automatic and manual departure detection.
+---
 
-Traveler Type: Solo, Couple, Family, or Group.
+## Deployment Guide
 
-Trip Vibe: Relaxation, Adventure, Honeymoon, or Culture.
+- **Docker** – A Dockerfile can be added (not included here). Build with `docker build -t ai-travel-agent .` and run `docker run -p 8000:8000 ai-travel-agent`.
+- **Cloud** – Deploy the FastAPI app to any platform that supports ASGI (e.g., Azure App Service, Render, Fly.io). Ensure the environment variables are set in the hosting environment.
+- **Static Data** – Keep the `data/` folder in the container or mount it as a volume so CSV/JSON files are accessible.
 
-Duration: Weekend, 1 Week, or 2+ Weeks.
+---
 
-2. Rich Multi-Recommendation Feed
-Generates up to 3 side-scrolling "Destination Cards" based on semantic matching.
+## Usage Example
 
-Immersive Media: Real-time vertical video previews (scraped from Pexels) or high-res city photography.
+```bash
+# Get live flight info for a destination (e.g., LHR)
+curl -X GET "http://127.0.0.1:8000/flight-info?destination=LHR"
+```
 
-AI Pitches: 4-sentence luxury pitches generated dynamically by Llama 3.1.
+The response includes flight status, price, weather, and relevant POIs.
 
-Weather Intelligence: Integrated weather "vibes" for every suggested location.
+---
 
-3. Live Intent & Temporal Extraction
-Temporal Brain: Converts conversational dates (e.g., "next Friday" or "June 15th") into standardized ISO formats using a zero-temperature LLM pass.
+## Contributing
 
-Real-Time Flights: Fetches live pricing and airline data via SearchAPI (Google Flights) once dates are confirmed.
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/awesome`).
+3. Make your changes and ensure the code follows the existing style.
+4. Open a Pull Request.
 
-4. Hybrid Chat Flow
-Memory-Aware: Remembers your selected destination and preferences for follow-up questions.
+---
 
-Late Binding: Re-injects accurate database metadata (URLs/IATA codes) into LLM responses to prevent hallucinations.
+## License
 
-🛠️ Technology Stack
-Frontend: Next.js 14, TypeScript, Tailwind CSS, Framer Motion (Animations).
-
-Backend: FastAPI (Asynchronous Python), Uvicorn.
-
-Vector Database: Pinecone (Serverless).
-
-LLM Engine: LM Studio (Local Server) hosting meta-llama-3.1-8b-instruct.
-
-Embeddings: sentence-transformers/all-MiniLM-L6-v2 (Running locally).
-
-APIs: SearchAPI.io (Google Flights & Hotels).
-
-🚀 Getting Started
-Prerequisites
-Node.js 18+ & NPM
-
-Python 3.10+
-
-LM Studio installed with Llama-3.1-8B-Instruct loaded.
-
-Installation
-Clone & Setup Backend
-
-Bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # venv\Scripts\activate on Windows
-pip install -r requirements.txt
-Configure Environment
-Create a .env file in the backend/ directory:
-
-Code snippet
-PINECONE_API_KEY=your_key
-SEARCHAPI_KEY=your_key
-LM_STUDIO_API_KEY=lm-studio
-Setup Frontend
-
-Bash
-cd ../frontend
-npm install
-Run the App
-
-Terminal 1: Open LM Studio and start the Local Server on port 1234.
-
-Terminal 2 (Backend): uvicorn main:app --reload
-
-Terminal 3 (Frontend): npm run dev
-
-📁 Project Structure
-Plaintext
-AI-TRAVEL-AGENT/
-├── frontend/                  # Next.js Application
-│   ├── src/app/page.tsx       # Chat UI & Widget Logic
-│   └── tailwind.config.ts     # Luxury Gold/Navy Theme
-├── backend/                   # FastAPI Application
-│   ├── main.py                # RAG Logic & Intent Extraction
-│   └── .env                   # Secrets
-├── data/                      # Local datasets (CSV/JSON)
-└── scripts/                   # Ingestion & Scraping scripts
-📜 License
-Internal Prototype - Proprietary logic for Airial-Clone project.
+This project is licensed under the MIT License.

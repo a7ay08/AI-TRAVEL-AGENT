@@ -26,7 +26,8 @@ if INDEX_NAME not in [idx.name for idx in pc.list_indexes()]:
 index = pc.Index(INDEX_NAME)
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# --- Helper Functions ---
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
 def get_val(row, possible_keys, default_val=""):
     """Searches a row for a list of possible column names safely."""
     for key in possible_keys:
@@ -46,14 +47,14 @@ def ingest_data():
     # --- Load Data ---
     print("Loading datasets...")
     # Original Data
-    pois_df = pd.read_csv("pois_completed.csv")
-    routes_df = pd.read_csv("routes.csv")
-    with open("city_pics.json", "r") as f:
+    pois_df = pd.read_csv(os.path.join(script_dir, "pois_completed.csv"))
+    routes_df = pd.read_csv(os.path.join(script_dir, "routes.csv"))
+    with open(os.path.join(script_dir, "city_pics.json"), "r") as f:
         city_pics = json.load(f)
         
     # New Data
-    hotels_df = pd.read_csv("hotels_populated.csv")
-    with open("pexels_media_db.json", "r") as f:
+    hotels_df = pd.read_csv(os.path.join(script_dir, "hotels_populated.csv"))
+    with open(os.path.join(script_dir, "pexels_media_db.json"), "r") as f:
         pexels_media = json.load(f)
 
     # STANDARDIZE COLUMNS: Lowercase and strip hidden spaces
@@ -114,6 +115,7 @@ def ingest_data():
         })
 
     # --- Step 3: Process Hotels ---
+    
     print("Processing Hotels...")
     hotel_vectors = []
     for idx, row in hotels_df.iterrows():
@@ -122,6 +124,7 @@ def ingest_data():
         amenities = get_val(row, ['amenities', 'features'], 'N/A')
         rating = get_val(row, ['rating', 'score'], 0.0)
         price = get_val(row, ['price_per_night', 'price'], 'N/A')
+        image_url = get_val(row, ['image_url'], "https://via.placeholder.com/400x300?text=No+Image")
 
         text_content = f"Hotel: {name} in {city}. Amenities: {amenities}"
         embedding = model.encode(text_content).tolist()
@@ -135,7 +138,8 @@ def ingest_data():
                 "city": str(city),
                 "amenities": str(amenities),
                 "rating": safe_float(rating),
-                "price": str(price)
+                "price": str(price),
+                "image_url": str(image_url)
             }
         })
 

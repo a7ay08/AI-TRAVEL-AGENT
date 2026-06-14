@@ -1,0 +1,17 @@
+iata_code,airport_name,search_city,restaurant_name,data_id,address,latitude,longitude,rating,reviews_count,price_level,phone_number,website,open_state,types,primary_image
+ADD,Bole Airport,Addis Ababa,Cravings Restaurant & Bar,0x164b8532e08f24a9:0x29224c1428af6192,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+ADD,Bole Airport,Addis Ababa,Kategna,0x164b85005c8cb8db:0x72226e39f9aa1a98,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+ADD,Bole Airport,Addis Ababa,Sheba Platinum and Star Gold Lounge,0x164b85a247dcb033:0xfec8a869ec291bb6,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+ADD,Bole Airport,Addis Ababa,Golden Plate Restaurant | Bole | ጎልደን ፕሌት ሬስቶራንት | ቦሌ,0x164b85be3ac1c2ab:0x71ef593d8cda87f0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+ADD,Bole Airport,Addis Ababa,Happiness Restaurant,0x164b850da3fe2d6b:0xc8d2c39cd72e1d8c,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AER,Sochi Airport,Sochi,Me Sochi (Ми Сочи),0x40f5c1923c9f1f4b:0x80233c13a1410ca7,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AER,Sochi Airport,Sochi,Myasnik I More,0x40f5c154c257544f:0x61b66c43b02bff76,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AER,Sochi Airport,Sochi,Ресторан Ахун,0x40f5c11b8f4b8e87:0x8fbd6ebad2693306,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AER,Sochi Airport,Sochi,Khinkali Tantsevali,0x40f5bf4f4c3bf5b1:0xdb1a6cc49b9d97b2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AER,Sochi Airport,Sochi,MAMAI-CALÉ,0x40f5cd4f4850d3f3:0x177abf4657a8ff61,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AGP,Malaga Airport,Malaga,Gorki,0xd72fb91579bee91:0x5b52946b5ddcf024,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AGP,Malaga Airport,Malaga,Giraffe World Kitchen,0xd72fbcb98a04817:0x8394241fdaeec102,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AGP,Malaga Airport,Malaga,Enrique Tomás,0xd72fbd52324c8a9:0x9176ec49f6c5c446,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AGP,Malaga Airport,Malaga,MESÓN ASADOR VIÑOLO,0xd72fa4fd220695d:0x6951588a17738fed,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+AGP,Malaga Airport,Malaga,La Boutique,0xd72fb7afdd10c39:0xc466cedbd0cbc511,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A
+ALA,Almaty Airport,Almaty,Safar Restaurant,0x38836d915dfe5eb1:0xe4a69a8ddebb4d6e,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,N/A

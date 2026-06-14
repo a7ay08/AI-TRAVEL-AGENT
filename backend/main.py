@@ -1,8 +1,14 @@
+"""Backend entry point for AI Travel Agent.
+
+Provides FastAPI app, loads data, sets up structured logging, and initializes the LLM handler.
+"""
+
 import os
 import json
 import re
 import csv
 import asyncio
+
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -10,23 +16,46 @@ import httpx
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from utils.llm_handler import LLMHandler
-from utils.weather_handler import get_live_weather
+try:
+    from utils.llm_handler import LLMHandler
+    from utils.weather_handler import get_live_weather
+except ModuleNotFoundError:
+    from backend.utils.llm_handler import LLMHandler
+    from backend.utils.weather_handler import get_live_weather
 from pydantic import BaseModel
+import logging
+from pythonjsonlogger import jsonlogger
+
+# Initialize structured JSON logger
+logger = logging.getLogger("ai_travel_agent")
+log_handler = logging.StreamHandler()
+formatter = jsonlogger.JsonFormatter('%(asctime)s %(levelname)s %(name)s %(message)s')
+log_handler.setFormatter(formatter)
+logger.addHandler(log_handler)
+logger.setLevel(logging.INFO)
 
 load_dotenv()
 
+
+
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
-DATA_DIR           = os.path.join(os.path.dirname(__file__), "../data")
-API_ORIGINS        = ["http://localhost:3000", "http://127.0.0.1:3000"]
-SEARCH_API_URL     = "https://www.searchapi.io/api/v1/search"
-DEFAULT_ORIGIN     = "AUH"
-FLIGHT_DAYS_AHEAD  = 30
-FLIGHT_TIMEOUT     = 15.0
-LLM_MODEL          = "meta-llama-3.1-8b-instruct"
-LLM_BASE_URL       = "http://localhost:1234/v1/"
-LLM_API_KEY        = os.getenv("LM_STUDIO_API_KEY", "lm-studio")
-searchapi_key      = os.getenv("SEARCHAPI_KEY", "")
+try:
+    from config import Settings
+except ModuleNotFoundError:
+    from backend.config import Settings
+
+settings = Settings()
+
+DATA_DIR           = settings.DATA_DIR
+API_ORIGINS        = settings.API_ORIGINS
+SEARCH_API_URL     = settings.SEARCH_API_URL
+DEFAULT_ORIGIN     = settings.DEFAULT_ORIGIN
+FLIGHT_DAYS_AHEAD  = settings.FLIGHT_DAYS_AHEAD
+FLIGHT_TIMEOUT     = settings.FLIGHT_TIMEOUT
+LLM_MODEL          = settings.LLM_MODEL
+LLM_BASE_URL       = settings.LLM_BASE_URL
+LLM_API_KEY        = settings.LLM_API_KEY
+searchapi_key      = settings.SEARCHAPI_KEY
 
 llm_handler = LLMHandler(base_url=LLM_BASE_URL, api_key=LLM_API_KEY, model=LLM_MODEL)
 
@@ -42,9 +71,9 @@ def load_csv(filename: str) -> List[Dict]:
         with open(path, "r", encoding="utf-8-sig") as f:
             for row in csv.DictReader(f):
                 rows.append(row)
-        print(f"[OK] Loaded {len(rows)} rows from {filename}")
+        logger.info(f"[OK] Loaded {len(rows)} rows from {filename}")
     except Exception as e:
-        print(f"[FAIL] Could not load {filename}: {e}")
+        logger.error(f"[FAIL] Could not load {filename}: {e}")
     return rows
 
 def load_json(filename: str) -> Any:
@@ -52,10 +81,10 @@ def load_json(filename: str) -> Any:
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        print(f"[OK] Loaded {filename}")
+        logger.info(f"[OK] Loaded {filename}")
         return data
     except Exception as e:
-        print(f"[FAIL] Could not load {filename}: {e}")
+        logger.error(f"[FAIL] Could not load {filename}: {e}")
         return {}
 
 # ─── DATA LOADING (all at startup) ───────────────────────────────────────────
@@ -212,14 +241,17 @@ def find_destinations(query: str, max_results: int = 3) -> List[Dict]:
 
     return matches[:max_results]
 
-def find_destinations_with_context(query: str, chat_history: List[Dict[str, str]], max_results: int = 3) -> List[Dict]:
+def find_destinations_with_context(query: str, chat_history: List[Dict[str, str]], max_results: int = 3, origin: Optional[str] = None) -> List[Dict]:
     """Find matching destinations using query first, falling back to scanning chat history context."""
     q = query.lower()
     matches: List[Dict] = []
     seen: set = set()
+    origin_up = origin.upper() if origin else ""
 
     # Exact / substring city match first
     for city_key, dest in DESTINATIONS_BY_CITY.items():
+        if origin_up and dest["iata"].upper() == origin_up:
+            continue
         if city_key in q and dest["iata"] not in seen:
             matches.append(dest)
             seen.add(dest["iata"])
@@ -227,6 +259,8 @@ def find_destinations_with_context(query: str, chat_history: List[Dict[str, str]
     # Country match in query
     if len(matches) < max_results:
         for city_key, dest in DESTINATIONS_BY_CITY.items():
+            if origin_up and dest["iata"].upper() == origin_up:
+                continue
             if dest["iata"] not in seen and dest["country"].lower() in q:
                 matches.append(dest)
                 seen.add(dest["iata"])
@@ -238,6 +272,8 @@ def find_destinations_with_context(query: str, chat_history: List[Dict[str, str]
         for msg in reversed(chat_history):
             content = msg.get("content", "").lower()
             for city_key, dest in DESTINATIONS_BY_CITY.items():
+                if origin_up and dest["iata"].upper() == origin_up:
+                    continue
                 if city_key in content and dest["iata"] not in seen:
                     matches.append(dest)
                     seen.add(dest["iata"])
@@ -545,10 +581,10 @@ async def search(query: SearchQuery):
         live_date = resolve_travel_date(query, extracted_date)
 
         # --- Find destinations ---
-        dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=3 if intent == "destination" else 1)
+        dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=3 if intent == "destination" else 1, origin=query.origin)
         has_real_city_match = len(dests) > 0
         if not dests:
-            dests = list(DESTINATIONS_BY_IATA.values())[:3]
+            dests = [d for d in DESTINATIONS_BY_IATA.values() if d["iata"].upper() != query.origin.upper()][:3]
 
         # --- Live flight data (for top destination) ---
         top_dest   = dests[0]
@@ -566,12 +602,12 @@ async def search(query: SearchQuery):
         hotel_context = ""
 
         if intent == "conversational":
-            conv_dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=1)
+            conv_dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=1, origin=query.origin)
             if conv_dests:
                 cd = conv_dests[0]
                 poi_context = get_pois_context(query.destination_query, cd["iata"], cd["city"])
         elif intent == "hotel":
-            hotel_city_dests_tmp = find_destinations_with_context(query.destination_query, chat_hist, max_results=1)
+            hotel_city_dests_tmp = find_destinations_with_context(query.destination_query, chat_hist, max_results=1, origin=query.origin)
             if hotel_city_dests_tmp:
                 hd_tmp = hotel_city_dests_tmp[0]
                 hotels_tmp = find_hotels(hd_tmp["iata"], hd_tmp["city"], max_results=5)
@@ -643,7 +679,7 @@ async def search(query: SearchQuery):
 
         elif intent == "hotel":
             # Find the specific city mentioned in the query
-            hotel_city_dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=1)
+            hotel_city_dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=1, origin=query.origin)
             if not hotel_city_dests:
                 hotel_city_dests = dests[:1]
             hd = hotel_city_dests[0]
@@ -673,7 +709,7 @@ async def search(query: SearchQuery):
 
         elif intent == "conversational":
             # Conversational query — find city, get POI context, no cards
-            conv_dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=1)
+            conv_dests = find_destinations_with_context(query.destination_query, chat_hist, max_results=1, origin=query.origin)
             city_name = conv_dests[0]["city"] if conv_dests else "the requested destination"
             iata_code  = conv_dests[0]["iata"] if conv_dests else ""
             # ai_resp already has the chat_response from the LLM (with POI context)

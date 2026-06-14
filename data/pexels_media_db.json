@@ -1,5 +1,5 @@
 {
-    "LOC_0": {
+    "ADD": {
         "location_name": "Addis Ababa",
         "videos": [
             "https://videos.pexels.com/video-files/7824427/7824427-hd_720_1280_60fps.mp4",
@@ -27,7 +27,7 @@
         ],
         "last_updated": "2026-04-29 21:27:14"
     },
-    "LOC_1": {
+    "AER": {
         "location_name": "Sochi",
         "videos": [
             "https://videos.pexels.com/video-files/18005607/18005607-hd_1080_1920_30fps.mp4",
@@ -55,7 +55,7 @@
         ],
         "last_updated": "2026-04-29 21:27:17"
     },
-    "LOC_2": {
+    "AGP": {
         "location_name": "Malaga",
         "videos": [
             "https://videos.pexels.com/video-files/28336648/12361244_360_640_60fps.mp4",
@@ -83,7 +83,7 @@
         ],
         "last_updated": "2026-04-29 21:27:21"
     },
-    "LOC_3": {
+    "ALA": {
         "location_name": "Almaty",
         "videos": [
             "https://videos.pexels.com/video-files/37164327/15743323_360_640_25fps.mp4",
@@ -111,7 +111,7 @@
         ],
         "last_updated": "2026-04-29 21:27:25"
     },
-    "LOC_4": {
+    "ALG": {
         "location_name": "Algiers",
         "videos": [
             "https://videos.pexels.com/video-files/34466972/14604889_360_640_30fps.mp4",
@@ -139,7 +139,7 @@
         ],
         "last_updated": "2026-04-29 21:27:29"
     },
-    "LOC_5": {
+    "AMD": {
         "location_name": "Ahmedabad",
         "videos": [
             "https://videos.pexels.com/video-files/31045396/13268084_360_640_60fps.mp4",
@@ -167,7 +167,7 @@
         ],
         "last_updated": "2026-04-29 21:27:33"
     },
-    "LOC_6": {
+    "AMM": {
         "location_name": "Amman",
         "videos": [
             "https://videos.pexels.com/video-files/37000419/15675060_360_640_60fps.mp4",
@@ -195,7 +195,7 @@
         ],
         "last_updated": "2026-04-29 21:27:37"
     },
-    "LOC_7": {
+    "AMS": {
         "location_name": "Amsterdam",
         "videos": [
             "https://videos.pexels.com/video-files/33410773/14221690_360_640_24fps.mp4",
@@ -223,7 +223,7 @@
         ],
         "last_updated": "2026-04-29 21:27:42"
     },
-    "LOC_8": {
+    "ATH": {
         "location_name": "Athens",
         "videos": [
             "https://videos.pexels.com/video-files/29618387/12745545_360_640_30fps.mp4",
@@ -251,7 +251,7 @@
         ],
         "last_updated": "2026-04-29 21:27:45"
     },
-    "LOC_9": {
+    "ATL": {
         "location_name": "Atlanta",
         "videos": [
             "https://videos.pexels.com/video-files/31970518/13622839_360_640_30fps.mp4",
@@ -279,7 +279,7 @@
         ],
         "last_updated": "2026-04-29 21:27:50"
     },
-    "LOC_10": {
+    "AUH": {
         "location_name": "Abu Dhabi",
         "videos": [
             "https://videos.pexels.com/video-files/32115512/13691896_360_640_30fps.mp4",
@@ -307,7 +307,7 @@
         ],
         "last_updated": "2026-04-29 21:27:53"
     },
-    "LOC_11": {
+    "AYT": {
         "location_name": "Antalya",
         "videos": [
             "https://videos.pexels.com/video-files/11974316/11974316-hd_1080_1920_30fps.mp4",
@@ -335,7 +335,7 @@
         ],
         "last_updated": "2026-04-29 21:27:58"
     },
-    "LOC_12": {
+    "BAH": {
         "location_name": "Bahrain",
         "videos": [
             "https://videos.pexels.com/video-files/29089718/12569725_360_640_60fps.mp4",
@@ -363,7 +363,7 @@
         ],
         "last_updated": "2026-04-29 21:28:01"
     },
-    "LOC_13": {
+    "BCN": {
         "location_name": "Barcelona",
         "videos": [
             "https://videos.pexels.com/video-files/20204343/20204343-hd_1080_1920_25fps.mp4",
@@ -391,7 +391,7 @@
         ],
         "last_updated": "2026-04-29 21:28:06"
     },
-    "LOC_14": {
+    "BEY": {
         "location_name": "Beirut",
         "videos": [
             "https://videos.pexels.com/video-files/36065081/15294747_360_640_30fps.mp4",
@@ -419,7 +419,7 @@
         ],
         "last_updated": "2026-04-29 21:28:10"
     },
-    "LOC_15": {
+    "BKK": {
         "location_name": "Bangkok",
         "videos": [
             "https://videos.pexels.com/video-files/30239329/12964359_360_640_25fps.mp4",
@@ -447,7 +447,7 @@
         ],
         "last_updated": "2026-04-29 21:28:13"
     },
-    "LOC_16": {
+    "BLR": {
         "location_name": "Bangalore",
         "videos": [
             "https://videos.pexels.com/video-files/35842144/15198683_360_640_60fps.mp4",
@@ -475,7 +475,7 @@
         ],
         "last_updated": "2026-04-29 21:28:18"
     },
-    "LOC_17": {
+    "BOM": {
         "location_name": "Mumbai",
         "videos": [
             "https://videos.pexels.com/video-files/36502783/15478334_360_684_30fps.mp4",
@@ -503,7 +503,7 @@
         ],
         "last_updated": "2026-04-29 21:28:22"
     },
-    "LOC_18": {
+    "BOS": {
         "location_name": "Boston",
         "videos": [
             "https://videos.pexels.com/video-files/31323820/13371835_360_640_30fps.mp4",
@@ -531,7 +531,7 @@
         ],
         "last_updated": "2026-04-29 21:28:27"
     },
-    "LOC_19": {
+    "BRU": {
         "location_name": "Brussels",
         "videos": [
             "https://videos.pexels.com/video-files/17816362/17816362-hd_1080_1920_60fps.mp4",
@@ -559,7 +559,7 @@
         ],
         "last_updated": "2026-04-29 21:28:31"
     },
-    "LOC_20": {
+    "CAI": {
         "location_name": "Cairo",
         "videos": [
             "https://videos.pexels.com/video-files/34208468/14498546_360_640_30fps.mp4",
@@ -587,7 +587,7 @@
         ],
         "last_updated": "2026-04-29 21:28:35"
     },
-    "LOC_21": {
+    "CCJ": {
         "location_name": "Kozhikode",
         "videos": [
             "https://videos.pexels.com/video-files/19622694/19622694-hd_720_1280_60fps.mp4",
@@ -615,7 +615,7 @@
         ],
         "last_updated": "2026-04-29 21:28:40"
     },
-    "LOC_22": {
+    "CCU": {
         "location_name": "Kolkata",
         "videos": [
             "https://videos.pexels.com/video-files/36168271/15338272_360_640_30fps.mp4",
@@ -643,7 +643,7 @@
         ],
         "last_updated": "2026-04-29 21:28:44"
     },
-    "LOC_23": {
+    "CDG": {
         "location_name": "Paris",
         "videos": [
             "https://videos.pexels.com/video-files/32382191/13812152_360_640_30fps.mp4",
@@ -671,7 +671,7 @@
         ],
         "last_updated": "2026-04-29 21:28:48"
     },
-    "LOC_24": {
+    "CGK": {
         "location_name": "Jakarta",
         "videos": [
             "https://videos.pexels.com/video-files/27291765/12111793_360_640_30fps.mp4",
@@ -699,7 +699,7 @@
         ],
         "last_updated": "2026-04-29 21:28:51"
     },
-    "LOC_25": {
+    "CLT": {
         "location_name": "Charlotte, North Carolina",
         "videos": [
             "https://videos.pexels.com/video-files/15454064/15454064-hd_720_1280_60fps.mp4",
@@ -727,7 +727,7 @@
         ],
         "last_updated": "2026-04-29 21:28:56"
     },
-    "LOC_26": {
+    "CMB": {
         "location_name": "Colombo",
         "videos": [
             "https://videos.pexels.com/video-files/27662349/12196958_360_640_30fps.mp4",
@@ -755,7 +755,7 @@
         ],
         "last_updated": "2026-04-29 21:29:00"
     },
-    "LOC_27": {
+    "CMN": {
         "location_name": "Casablanca",
         "videos": [
             "https://videos.pexels.com/video-files/19995247/19995247-hd_1080_1920_30fps.mp4",
@@ -783,7 +783,7 @@
         ],
         "last_updated": "2026-04-29 21:29:04"
     },
-    "LOC_28": {
+    "CNX": {
         "location_name": "Chiang Mai",
         "videos": [
             "https://videos.pexels.com/video-files/31387394/13392926_360_640_60fps.mp4",
@@ -811,7 +811,7 @@
         ],
         "last_updated": "2026-04-29 21:29:07"
     },
-    "LOC_29": {
+    "COK": {
         "location_name": "Kochi",
         "videos": [
             "https://videos.pexels.com/video-files/29757828/12789041_360_640_60fps.mp4",
@@ -839,7 +839,7 @@
         ],
         "last_updated": "2026-04-29 21:29:13"
     },
-    "LOC_30": {
+    "CPH": {
         "location_name": "Copenhagen",
         "videos": [
             "https://videos.pexels.com/video-files/30867695/13199685_360_640_25fps.mp4",
@@ -867,7 +867,7 @@
         ],
         "last_updated": "2026-04-29 21:29:17"
     },
-    "LOC_31": {
+    "DAM": {
         "location_name": "Damascus",
         "videos": [
             "https://videos.pexels.com/video-files/36944541/15650927_360_640_60fps.mp4",
@@ -895,7 +895,7 @@
         ],
         "last_updated": "2026-04-29 21:29:21"
     },
-    "LOC_32": {
+    "DBB": {
         "location_name": "Al Alamein",
         "videos": [
             "https://videos.pexels.com/video-files/35562681/15068481_360_640_30fps.mp4",
@@ -923,7 +923,7 @@
         ],
         "last_updated": "2026-04-29 21:29:25"
     },
-    "LOC_33": {
+    "DEL": {
         "location_name": "New Delhi",
         "videos": [
             "https://videos.pexels.com/video-files/27998523/12284758_360_640_60fps.mp4",
@@ -951,7 +951,7 @@
         ],
         "last_updated": "2026-04-29 21:29:30"
     },
-    "LOC_34": {
+    "DMM": {
         "location_name": "Dammam",
         "videos": [
             "https://videos.pexels.com/video-files/29089718/12569725_360_640_60fps.mp4",
@@ -979,7 +979,7 @@
         ],
         "last_updated": "2026-04-29 21:29:34"
     },
-    "LOC_35": {
+    "DOH": {
         "location_name": "Doha",
         "videos": [
             "https://videos.pexels.com/video-files/32177421/13721678_360_640_60fps.mp4",
@@ -1007,7 +1007,7 @@
         ],
         "last_updated": "2026-04-29 21:29:38"
     },
-    "LOC_36": {
+    "DPS": {
         "location_name": "Bali",
         "videos": [
             "https://videos.pexels.com/video-files/34793944/14751835_360_640_60fps.mp4",
@@ -1035,7 +1035,7 @@
         ],
         "last_updated": "2026-04-29 21:29:42"
     },
-    "LOC_37": {
+    "DUB": {
         "location_name": "Dublin",
         "videos": [
             "https://videos.pexels.com/video-files/29473966/12687428_360_640_60fps.mp4",
@@ -1063,7 +1063,7 @@
         ],
         "last_updated": "2026-04-29 21:29:45"
     },
-    "LOC_38": {
+    "DUS": {
         "location_name": "Dusseldorf",
         "videos": [
             "https://videos.pexels.com/video-files/34350850/14552989_360_640_60fps.mp4",
@@ -1091,7 +1091,7 @@
         ],
         "last_updated": "2026-04-29 21:29:50"
     },
-    "LOC_39": {
+    "ELQ": {
         "location_name": "Al Qassim",
         "videos": [
             "https://videos.pexels.com/video-files/34743476/14728614_360_640_30fps.mp4",
@@ -1119,7 +1119,7 @@
         ],
         "last_updated": "2026-04-29 21:29:54"
     },
-    "LOC_40": {
+    "EVN": {
         "location_name": "Yerevan",
         "videos": [
             "https://videos.pexels.com/video-files/16209388/16209388-hd_1080_1920_30fps.mp4",
@@ -1147,7 +1147,7 @@
         ],
         "last_updated": "2026-04-29 21:29:58"
     },
-    "LOC_41": {
+    "FCO": {
         "location_name": "Rome",
         "videos": [
             "https://videos.pexels.com/video-files/34506886/14620516_360_640_30fps.mp4",
@@ -1175,7 +1175,7 @@
         ],
         "last_updated": "2026-04-29 21:30:02"
     },
-    "LOC_42": {
+    "FRA": {
         "location_name": "Frankfurt",
         "videos": [
             "https://videos.pexels.com/video-files/36860197/15616069_360_640_30fps.mp4",
@@ -1203,7 +1203,7 @@
         ],
         "last_updated": "2026-04-29 21:30:06"
     },
-    "LOC_43": {
+    "GVA": {
         "location_name": "Geneva",
         "videos": [
             "https://videos.pexels.com/video-files/36000999/15265359_360_640_30fps.mp4",
@@ -1231,7 +1231,7 @@
         ],
         "last_updated": "2026-04-29 21:30:10"
     },
-    "LOC_44": {
+    "GYD": {
         "location_name": "Baku",
         "videos": [
             "https://videos.pexels.com/video-files/31616244/13470382_360_640_30fps.mp4",
@@ -1259,7 +1259,7 @@
         ],
         "last_updated": "2026-04-29 21:30:13"
     },
-    "LOC_45": {
+    "HAN": {
         "location_name": "Hanoi",
         "videos": [
             "https://videos.pexels.com/video-files/34549877/14639072_360_640_30fps.mp4",
@@ -1287,7 +1287,7 @@
         ],
         "last_updated": "2026-04-29 21:30:19"
     },
-    "LOC_46": {
+    "HKG": {
         "location_name": "Hong Kong",
         "videos": [
             "https://videos.pexels.com/video-files/29913714/12840056_360_640_60fps.mp4",
@@ -1315,7 +1315,7 @@
         ],
         "last_updated": "2026-04-29 21:30:23"
     },
-    "LOC_47": {
+    "HKT": {
         "location_name": "Phuket",
         "videos": [
             "https://videos.pexels.com/video-files/30385610/13021876_360_640_24fps.mp4",
@@ -1343,7 +1343,7 @@
         ],
         "last_updated": "2026-04-29 21:30:27"
     },
-    "LOC_48": {
+    "HYD": {
         "location_name": "Hyderabad",
         "videos": [
             "https://videos.pexels.com/video-files/7884683/7884683-hd_720_1280_30fps.mp4",
@@ -1371,7 +1371,7 @@
         ],
         "last_updated": "2026-04-29 21:30:31"
     },
-    "LOC_49": {
+    "IAD": {
         "location_name": "Washington",
         "videos": [
             "https://videos.pexels.com/video-files/25751664/11906047_360_640_30fps.mp4",
@@ -1399,7 +1399,7 @@
         ],
         "last_updated": "2026-04-29 21:30:34"
     },
-    "LOC_50": {
+    "ICN": {
         "location_name": "Seoul",
         "videos": [
             "https://videos.pexels.com/video-files/36949171/15653507_360_640_30fps.mp4",
@@ -1427,7 +1427,7 @@
         ],
         "last_updated": "2026-04-29 21:30:39"
     },
-    "LOC_51": {
+    "ISB": {
         "location_name": "Islamabad",
         "videos": [
             "https://videos.pexels.com/video-files/19068330/19068330-hd_1080_1920_30fps.mp4",
@@ -1455,7 +1455,7 @@
         ],
         "last_updated": "2026-04-29 21:30:44"
     },
-    "LOC_52": {
+    "IST": {
         "location_name": "Istanbul",
         "videos": [
             "https://videos.pexels.com/video-files/35092782/14866840_360_640_30fps.mp4",
@@ -1483,7 +1483,7 @@
         ],
         "last_updated": "2026-04-29 21:30:47"
     },
-    "LOC_53": {
+    "JAI": {
         "location_name": "Jaipur",
         "videos": [
             "https://videos.pexels.com/video-files/25875658/11916924_360_640_30fps.mp4",
@@ -1511,7 +1511,7 @@
         ],
         "last_updated": "2026-04-29 21:30:51"
     },
-    "LOC_54": {
+    "JED": {
         "location_name": "Jeddah",
         "videos": [
             "https://videos.pexels.com/video-files/34747252/14730340_360_640_30fps.mp4",
@@ -1539,7 +1539,7 @@
         ],
         "last_updated": "2026-04-29 21:30:55"
     },
-    "LOC_55": {
+    "JFK": {
         "location_name": "New York",
         "videos": [
             "https://videos.pexels.com/video-files/29551360/12720637_360_640_30fps.mp4",
@@ -1567,7 +1567,7 @@
         ],
         "last_updated": "2026-04-29 21:31:00"
     },
-    "LOC_56": {
+    "JMK": {
         "location_name": "Mykonos",
         "videos": [
             "https://videos.pexels.com/video-files/35730370/15143548_360_640_60fps.mp4",
@@ -1595,7 +1595,7 @@
         ],
         "last_updated": "2026-04-29 21:31:04"
     },
-    "LOC_57": {
+    "JNB": {
         "location_name": "Johannesburg",
         "videos": [
             "https://videos.pexels.com/video-files/35599671/15085905_360_640_30fps.mp4",
@@ -1623,7 +1623,7 @@
         ],
         "last_updated": "2026-04-29 21:31:08"
     },
-    "LOC_58": {
+    "JTR": {
         "location_name": "Santorini",
         "videos": [
             "https://videos.pexels.com/video-files/32538673/13876503_360_640_24fps.mp4",
@@ -1651,7 +1651,7 @@
         ],
         "last_updated": "2026-04-29 21:31:12"
     },
-    "LOC_59": {
+    "KBV": {
         "location_name": "Krabi",
         "videos": [
             "https://videos.pexels.com/video-files/35317689/14962540_360_640_30fps.mp4",
@@ -1679,7 +1679,7 @@
         ],
         "last_updated": "2026-04-29 21:31:17"
     },
-    "LOC_60": {
+    "KHI": {
         "location_name": "Karachi",
         "videos": [
             "https://videos.pexels.com/video-files/35630937/15100137_360_640_30fps.mp4",
@@ -1707,7 +1707,7 @@
         ],
         "last_updated": "2026-04-29 21:31:21"
     },
-    "LOC_61": {
+    "KIX": {
         "location_name": "Osaka",
         "videos": [
             "https://videos.pexels.com/video-files/29006525/12543961_360_640_30fps.mp4",
@@ -1735,7 +1735,7 @@
         ],
         "last_updated": "2026-04-29 21:31:25"
     },
-    "LOC_62": {
+    "KNO": {
         "location_name": "Medan",
         "videos": [
             "https://videos.pexels.com/video-files/36962955/15659701_360_640_30fps.mp4",
@@ -1763,7 +1763,7 @@
         ],
         "last_updated": "2026-04-29 21:31:29"
     },
-    "LOC_63": {
+    "KRK": {
         "location_name": "Krakow",
         "videos": [
             "https://videos.pexels.com/video-files/19970994/19970994-hd_1080_1920_30fps.mp4",
@@ -1791,7 +1791,7 @@
         ],
         "last_updated": "2026-04-29 21:31:33"
     },
-    "LOC_64": {
+    "KTI": {
         "location_name": "Phnom Penh Krong Ta Khmau",
         "videos": [
             "https://videos.pexels.com/video-files/29144002/12588883_360_640_60fps.mp4",
@@ -1819,7 +1819,7 @@
         ],
         "last_updated": "2026-04-29 21:31:38"
     },
-    "LOC_65": {
+    "KUL": {
         "location_name": "Kuala Lumpur",
         "videos": [
             "https://videos.pexels.com/video-files/29082031/12567998_360_640_60fps.mp4",
@@ -1847,7 +1847,7 @@
         ],
         "last_updated": "2026-04-29 21:31:42"
     },
-    "LOC_66": {
+    "KWI": {
         "location_name": "Kuwait",
         "videos": [
             "https://videos.pexels.com/video-files/34325045/14541764_360_640_30fps.mp4",
@@ -1875,7 +1875,7 @@
         ],
         "last_updated": "2026-04-29 21:31:47"
     },
-    "LOC_67": {
+    "KZN": {
         "location_name": "Kazan",
         "videos": [
             "https://videos.pexels.com/video-files/36885061/15624717_360_640_60fps.mp4",
@@ -1903,7 +1903,7 @@
         ],
         "last_updated": "2026-04-29 21:31:50"
     },
-    "LOC_68": {
+    "LED": {
         "location_name": "Saint Petersburg",
         "videos": [
             "https://videos.pexels.com/video-files/32464049/13845623_360_640_30fps.mp4",
@@ -1931,7 +1931,7 @@
         ],
         "last_updated": "2026-04-29 21:31:55"
     },
-    "LOC_69": {
+    "LHE": {
         "location_name": "Lahore",
         "videos": [
             "https://videos.pexels.com/video-files/12117977/12117977-hd_1080_1920_60fps.mp4",
@@ -1959,7 +1959,7 @@
         ],
         "last_updated": "2026-04-29 21:31:59"
     },
-    "LOC_70": {
+    "LHR": {
         "location_name": "London",
         "videos": [
             "https://videos.pexels.com/video-files/34335204/14545368_360_640_60fps.mp4",
@@ -1987,7 +1987,7 @@
         ],
         "last_updated": "2026-04-29 21:32:03"
     },
-    "LOC_71": {
+    "LIS": {
         "location_name": "Lisbon",
         "videos": [
             "https://videos.pexels.com/video-files/31366888/13385218_360_640_50fps.mp4",
@@ -2015,7 +2015,7 @@
         ],
         "last_updated": "2026-04-29 21:32:06"
     },
-    "LOC_72": {
+    "MAA": {
         "location_name": "Chennai",
         "videos": [
             "https://videos.pexels.com/video-files/28028683/12287848_360_640_30fps.mp4",
@@ -2043,7 +2043,7 @@
         ],
         "last_updated": "2026-04-29 21:32:11"
     },
-    "LOC_73": {
+    "MAD": {
         "location_name": "Madrid",
         "videos": [
             "https://videos.pexels.com/video-files/33389240/14214165_360_640_30fps.mp4",
@@ -2071,7 +2071,7 @@
         ],
         "last_updated": "2026-04-29 21:32:14"
     },
-    "LOC_74": {
+    "MAN": {
         "location_name": "Manchester",
         "videos": [
             "https://videos.pexels.com/video-files/32061564/13665876_360_640_30fps.mp4",
@@ -2099,7 +2099,7 @@
         ],
         "last_updated": "2026-04-29 21:32:18"
     },
-    "LOC_75": {
+    "MCT": {
         "location_name": "Muscat",
         "videos": [
             "https://videos.pexels.com/video-files/36223327/15361857_360_640_60fps.mp4",
@@ -2127,7 +2127,7 @@
         ],
         "last_updated": "2026-04-29 21:32:22"
     },
-    "LOC_76": {
+    "MED": {
         "location_name": "Medina",
         "videos": [
             "https://videos.pexels.com/video-files/35189248/14908200_360_640_30fps.mp4",
@@ -2155,7 +2155,7 @@
         ],
         "last_updated": "2026-04-29 21:32:26"
     },
-    "LOC_77": {
+    "MEL": {
         "location_name": "Melbourne",
         "videos": [
             "https://videos.pexels.com/video-files/36522677/15486695_360_640_24fps.mp4",
@@ -2183,7 +2183,7 @@
         ],
         "last_updated": "2026-04-29 21:32:31"
     },
-    "LOC_78": {
+    "MLE": {
         "location_name": "Male",
         "videos": [
             "https://videos.pexels.com/video-files/6316964/6316964-hd_1080_1920_25fps.mp4",
@@ -2211,7 +2211,7 @@
         ],
         "last_updated": "2026-04-29 21:32:36"
     },
-    "LOC_79": {
+    "MNL": {
         "location_name": "Manila",
         "videos": [
             "https://videos.pexels.com/video-files/35957695/15247060_360_640_24fps.mp4",
@@ -2239,7 +2239,7 @@
         ],
         "last_updated": "2026-04-29 21:32:40"
     },
-    "LOC_80": {
+    "MUC": {
         "location_name": "Munich",
         "videos": [
             "https://videos.pexels.com/video-files/33603706/14283745_360_640_60fps.mp4",
@@ -2267,7 +2267,7 @@
         ],
         "last_updated": "2026-04-29 21:32:44"
     },
-    "LOC_81": {
+    "MXP": {
         "location_name": "Milan",
         "videos": [
             "https://videos.pexels.com/video-files/34576139/14651626_360_640_30fps.mp4",
@@ -2295,7 +2295,7 @@
         ],
         "last_updated": "2026-04-29 21:32:49"
     },
-    "LOC_82": {
+    "NBO": {
         "location_name": "Nairobi",
         "videos": [
             "https://videos.pexels.com/video-files/30261668/12973207_360_640_30fps.mp4",
@@ -2323,7 +2323,7 @@
         ],
         "last_updated": "2026-04-29 21:32:53"
     },
-    "LOC_83": {
+    "NCE": {
         "location_name": "Nice",
         "videos": [
             "https://videos.pexels.com/video-files/17506936/17506936-hd_1080_1920_30fps.mp4",
@@ -2351,7 +2351,7 @@
         ],
         "last_updated": "2026-04-29 21:32:57"
     },
-    "LOC_84": {
+    "NRT": {
         "location_name": "Tokyo",
         "videos": [
             "https://videos.pexels.com/video-files/31044316/13267750_360_640_30fps.mp4",
@@ -2379,7 +2379,7 @@
         ],
         "last_updated": "2026-04-29 21:33:01"
     },
-    "LOC_85": {
+    "ORD": {
         "location_name": "Chicago",
         "videos": [
             "https://videos.pexels.com/video-files/17671633/17671633-hd_720_1280_24fps.mp4",
@@ -2407,7 +2407,7 @@
         ],
         "last_updated": "2026-04-29 21:33:05"
     },
-    "LOC_86": {
+    "OTP": {
         "location_name": "Bucharest",
         "videos": [
             "https://videos.pexels.com/video-files/19840174/19840174-hd_1080_1920_30fps.mp4",
@@ -2435,7 +2435,7 @@
         ],
         "last_updated": "2026-04-29 21:33:09"
     },
-    "LOC_87": {
+    "PEW": {
         "location_name": "Peshawar",
         "videos": [
             "https://videos.pexels.com/video-files/20728487/20728487-hd_720_1280_30fps.mp4",
@@ -2463,7 +2463,7 @@
         ],
         "last_updated": "2026-04-29 21:33:12"
     },
-    "LOC_88": {
+    "PKX": {
         "location_name": "Beijing",
         "videos": [
             "https://videos.pexels.com/video-files/37096713/15715543_360_640_60fps.mp4",
@@ -2491,7 +2491,7 @@
         ],
         "last_updated": "2026-04-29 21:33:16"
     },
-    "LOC_89": {
+    "PMI": {
         "location_name": "Palma De Mallorca",
         "videos": [
             "https://videos.pexels.com/video-files/30114864/12915641_360_640_30fps.mp4",
@@ -2519,7 +2519,7 @@
         ],
         "last_updated": "2026-04-29 21:33:20"
     },
-    "LOC_90": {
+    "PRG": {
         "location_name": "Prague",
         "videos": [
             "https://videos.pexels.com/video-files/34650997/14687000_360_640_30fps.mp4",
@@ -2547,7 +2547,7 @@
         ],
         "last_updated": "2026-04-29 21:33:24"
     },
-    "LOC_91": {
+    "PVG": {
         "location_name": "Shanghai",
         "videos": [
             "https://videos.pexels.com/video-files/36285724/15386010_360_640_50fps.mp4",
@@ -2575,7 +2575,7 @@
         ],
         "last_updated": "2026-04-29 21:33:28"
     },
-    "LOC_92": {
+    "RUH": {
         "location_name": "Riyadh",
         "videos": [
             "https://videos.pexels.com/video-files/35626508/15097816_360_640_60fps.mp4",
@@ -2603,7 +2603,7 @@
         ],
         "last_updated": "2026-04-29 21:33:32"
     },
-    "LOC_93": {
+    "SEZ": {
         "location_name": "Seychelles",
         "videos": [
             "https://videos.pexels.com/video-files/15420593/15420593-hd_720_1280_30fps.mp4",
@@ -2631,7 +2631,7 @@
         ],
         "last_updated": "2026-04-29 21:33:36"
     },
-    "LOC_94": {
+    "SIN": {
         "location_name": "Singapore",
         "videos": [
             "https://videos.pexels.com/video-files/35528383/15051293_360_640_30fps.mp4",
@@ -2659,7 +2659,7 @@
         ],
         "last_updated": "2026-04-29 21:33:40"
     },
-    "LOC_95": {
+    "SLL": {
         "location_name": "Salalah",
         "videos": [
             "https://videos.pexels.com/video-files/35512523/15044971_360_640_30fps.mp4",
@@ -2687,7 +2687,7 @@
         ],
         "last_updated": "2026-04-29 21:33:44"
     },
-    "LOC_96": {
+    "SVO": {
         "location_name": "Moscow",
         "videos": [
             "https://videos.pexels.com/video-files/10967338/10967338-hd_1080_1920_25fps.mp4",
@@ -2715,7 +2715,7 @@
         ],
         "last_updated": "2026-04-29 21:33:49"
     },
-    "LOC_97": {
+    "SYD": {
         "location_name": "Sydney",
         "videos": [
             "https://videos.pexels.com/video-files/36991191/15670218_360_640_30fps.mp4",
@@ -2743,7 +2743,7 @@
         ],
         "last_updated": "2026-04-29 21:33:52"
     },
-    "LOC_98": {
+    "TAS": {
         "location_name": "Tashkent",
         "videos": [
             "https://videos.pexels.com/video-files/37022187/15685535_360_640_25fps.mp4",
@@ -2771,7 +2771,7 @@
         ],
         "last_updated": "2026-04-29 21:33:58"
     },
-    "LOC_99": {
+    "TBS": {
         "location_name": "Tbilisi",
         "videos": [
             "https://videos.pexels.com/video-files/34863915/14775249_360_640_30fps.mp4",
@@ -2799,7 +2799,7 @@
         ],
         "last_updated": "2026-04-29 21:34:01"
     },
-    "LOC_100": {
+    "TLV": {
         "location_name": "Tel Aviv",
         "videos": [
             "https://videos.pexels.com/video-files/36755893/15577549_360_640_60fps.mp4",
@@ -2827,7 +2827,7 @@
         ],
         "last_updated": "2026-04-29 21:34:06"
     },
-    "LOC_101": {
+    "TPE": {
         "location_name": "Taipei",
         "videos": [
             "https://videos.pexels.com/video-files/29150651/12591498_360_640_25fps.mp4",
@@ -2855,7 +2855,7 @@
         ],
         "last_updated": "2026-04-29 21:34:10"
     },
-    "LOC_102": {
+    "TRV": {
         "location_name": "Thiruvananthapuram",
         "videos": [
             "https://videos.pexels.com/video-files/37214096/15764775_360_640_24fps.mp4",
@@ -2883,7 +2883,7 @@
         ],
         "last_updated": "2026-04-29 21:34:15"
     },
-    "LOC_103": {
+    "TUN": {
         "location_name": "Tunis",
         "videos": [
             "https://videos.pexels.com/video-files/32952239/14044173_360_640_30fps.mp4",
@@ -2911,7 +2911,7 @@
         ],
         "last_updated": "2026-04-29 21:34:19"
     },
-    "LOC_104": {
+    "VIE": {
         "location_name": "Vienna",
         "videos": [
             "https://videos.pexels.com/video-files/34585837/14656067_360_640_60fps.mp4",
@@ -2939,7 +2939,7 @@
         ],
         "last_updated": "2026-04-29 21:34:23"
     },
-    "LOC_105": {
+    "WAW": {
         "location_name": "Warsaw",
         "videos": [
             "https://videos.pexels.com/video-files/31839012/13564348_360_640_30fps.mp4",
@@ -2967,7 +2967,7 @@
         ],
         "last_updated": "2026-04-29 21:34:27"
     },
-    "LOC_106": {
+    "YYZ": {
         "location_name": "Toronto",
         "videos": [
             "https://videos.pexels.com/video-files/20597195/20597195-hd_1080_1920_30fps.mp4",
@@ -2995,7 +2995,7 @@
         ],
         "last_updated": "2026-04-29 21:34:31"
     },
-    "LOC_107": {
+    "ZNZ": {
         "location_name": "Zanzibar",
         "videos": [
             "https://videos.pexels.com/video-files/29578030/12731183_360_640_30fps.mp4",
@@ -3023,7 +3023,7 @@
         ],
         "last_updated": "2026-04-29 21:34:35"
     },
-    "LOC_108": {
+    "ZRH": {
         "location_name": "Zurich",
         "videos": [
             "https://videos.pexels.com/video-files/30961528/13236403_360_640_60fps.mp4",
